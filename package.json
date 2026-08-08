@@ -1,0 +1,34 @@
+{
+  "name": "modern-bingo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server",
+    "packages/*"
+  ],
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w client\" \"npm run dev -w server\"",
+    "build": "npm run build -w client && npm run build -w server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidusptr/modern-bingo.git"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kidusptr/modern-bingo/issues"
+  },
+  "homepage": "https://github.com/kidusptr/modern-bingo#readme"
+}
